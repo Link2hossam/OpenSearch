@@ -87,6 +87,12 @@ dependencies {
   api 'io.opencensus:opencensus-contrib-http-util:0.31.1'
 
   testImplementation project(':test:fixtures:gcs-fixture')
+
+  constraints {
+    api('com.fasterxml.jackson.core:jackson-core:2.18.6') {
+      because 'Fixes security vulnerabilities'
+    }
+  }
 }
 
 restResources {
