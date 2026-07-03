@@ -58,6 +58,12 @@ configurations {
 }
 
 dependencies {
+  constraints {
+    api("com.fasterxml.jackson.core:jackson-core:${versions.jackson}") {
+      because 'Pinning jackson-core version to resolve vulnerabilities'
+    }
+  }
+
   api "org.apache.hadoop:hadoop-client-api:${versions.hadoop3}"
   runtimeOnly "org.apache.hadoop:hadoop-client-runtime:${versions.hadoop3}"
   api("org.apache.hadoop:hadoop-hdfs:${versions.hadoop3}") {
@@ -76,7 +82,7 @@ dependencies {
   api "org.apache.commons:commons-compress:${versions.commonscompress}"
   api 'org.apache.commons:commons-configuration2:2.12.0'
   api "commons-io:commons-io:${versions.commonsio}"
-  api 'org.apache.commons:commons-lang3:3.17.0'
+  api "org.apache.commons:commons-lang3:${versions.commonslang}"
   implementation 'com.google.re2j:re2j:1.8'
   api 'javax.servlet:servlet-api:2.5'
   api "org.slf4j:slf4j-api:${versions.slf4j}"
