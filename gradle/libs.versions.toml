@@ -8,7 +8,7 @@ bundled_jdk = "21.0.7+6"
 # optional dependencies
 spatial4j         = "0.7"
 jts               = "1.15.0"
-jackson           = "2.18.2"
+jackson           = "2.21.1"
 jackson_databind  = "2.18.2"
 snakeyaml         = "2.1"
 icu4j             = "77.1"
@@ -107,6 +107,7 @@ bouncycastle-util = { group = "org.bouncycastle", name = "bcutil-fips", version.
 hamcrest = { group = "org.hamcrest", name = "hamcrest", version.ref = "hamcrest" }
 hdrhistogram = { group = "org.hdrhistogram", name = "HdrHistogram", version.ref = "hdrhistogram" }
 jackson-annotation = { group = "com.fasterxml.jackson.core", name = "jackson-annotations", version.ref = "jackson" }
+jackson-core = { group = "com.fasterxml.jackson.core", name = "jackson-core", version.ref = "jackson" }
 jackson-databind = { group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref = "jackson_databind" }
 jackson-datatype-jsr310 = { group = "com.fasterxml.jackson.datatype", name = "jackson-datatype-jsr310", version.ref = "jackson" }
 jakartaannotation = { group = "jakarta.annotation", name = "jakarta.annotation-api", version.ref = "jakarta_annotation" }
