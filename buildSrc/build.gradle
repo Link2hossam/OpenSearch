@@ -138,6 +138,9 @@ dependencies {
 configurations.all {
   resolutionStrategy {
     force "com.google.guava:guava:${props.getProperty('guava')}"
+    force "com.fasterxml.jackson.core:jackson-core:2.18.6"
+    force "org.apache.commons:commons-lang3:3.18.0"
+    force "org.eclipse.jgit:org.eclipse.jgit:6.10.1.202505221210-r"
   }
 }
 
